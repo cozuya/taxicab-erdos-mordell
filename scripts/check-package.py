@@ -10,7 +10,7 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCES = {
-    'README.md', 'PROOF.md', 'PROVENANCE.md', 'PRIOR_ART.md', 'CITATION.cff',
+    'README.md', 'PROOF.md', 'PROVENANCE.md', 'PRIOR_ART.md', 'CITATION.cff', 'LICENSE',
     'VERIFICATION_REPORT.md', 'Taxicab.lean', 'Verification.lean',
     'lean-toolchain', 'lakefile.toml', 'lake-manifest.json', 'TOOLCHAIN.json',
     'verify.sh', '.gitignore', '.github/workflows/verify.yml',

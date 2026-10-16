@@ -123,4 +123,10 @@ it is separate from the committed local evidence.
 Formal verification establishes the stated results within Lean's kernel and the
 listed foundations. It does not establish historical priority. See
 [PRIOR_ART.md](PRIOR_ART.md) for the bounded literature review and its access
-limitation. Licensing is undecided.
+limitation.
+
+## License
+
+Copyright 2026 Chris Ozols. The Lean proofs, scripts, and documentation in this
+repository are licensed under the [Apache License, Version 2.0](LICENSE).
+Third-party dependencies retain their respective licenses.

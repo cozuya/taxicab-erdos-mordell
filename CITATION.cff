@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this proof using the metadata below and identify the commit consulted."
 title: "Taxicab Erdős–Mordell Inequality: Proof of Conjecture 1"
 type: software
+license: Apache-2.0
 authors:
   - family-names: Ozols
     given-names: Chris
