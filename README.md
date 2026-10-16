@@ -82,7 +82,7 @@ bash scripts/fetch-deps.sh
 python3 scripts/check-package.py
 ```
 
-Access to a private repository requires GitHub authentication. If the exact Lean
+If the exact Lean
 toolchain is already installed, omit the installer and put its `bin` directory on
 `PATH`, or set `LEAN_BIN_DIR` when running the fetch and verification scripts.
 Other platforms can install the version in [lean-toolchain](lean-toolchain) and

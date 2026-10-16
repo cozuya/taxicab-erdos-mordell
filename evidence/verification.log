@@ -1,6 +1,6 @@
 
 $ date -u +%Y-%m-%dT%H:%M:%SZ
-2026-10-16T05:49:54Z
+2026-10-16T14:27:19Z
 EXIT_CODE=0
 
 $ lean --version
@@ -68,10 +68,10 @@ $ python3 scripts/audit.py hashes
 223b4f5a9c86ea28e5a77c93b04ccd2f15973db77994241bc3b69d2e5a290ab7 .github/workflows/verify.yml
 f7e8dceca56d968438711df14725064785f189679423f57c7eb0158b8441b65d .gitignore
 cfe20fe45055b4c02da7240b46251da4e3de96f22433b4a2baf544a70034b2a7 CITATION.cff
-2ec3b2ad044fe86b373db885f6e52f6739c1646dda5363d1520ca8e25053f44f PRIOR_ART.md
+b0332d237cecba5eb130332a32c7f0a67194432f303e08961ef11ae8ee295365 PRIOR_ART.md
 12f8432a146dc10252995626ba307a7980306908e4ac2b8cb7956e57245504aa PROOF.md
 9c01bb139d566ca33e7b14302ce1d50939fdc2735376ecd0a3b76ffc0466ab34 PROVENANCE.md
-1e9555a497314405a8e7c8b46c8911a9ee116e8025be4b3dde4f9ff3b840f4d7 README.md
+a10d826c72808c2f5a36f18ef49f563ed3114ae389fc06edb47cf0b4b877a75e README.md
 80aedd22ec1bfb1bed1deffe4432e1a3a0e8ee78e34ab94ddc4806b1db6a0c42 TOOLCHAIN.json
 1da7e50cd7fdb1becc2fcca487a2868e5132e57894074969b70d59be9ca7ac16 Taxicab.lean
 61924125c88be434aa4be6af684fa451510a86ffd6390f09146ad877ca174db5 Taxicab/Algebra.lean
@@ -97,15 +97,15 @@ $ lake clean taxicab_erdos_mordell
 EXIT_CODE=0
 
 $ lake build
-✔ [1011/1021] Built Taxicab.Imports (612ms)
-✔ [1012/1021] Built Taxicab.Basic (1.2s)
-✔ [1013/1021] Built Taxicab.Algebra (1.5s)
-✔ [1014/1021] Built Taxicab.Sharpness (927ms)
+✔ [1011/1021] Built Taxicab.Imports (1.6s)
+✔ [1012/1021] Built Taxicab.Basic (870ms)
+✔ [1013/1021] Built Taxicab.Algebra (1.2s)
+✔ [1014/1021] Built Taxicab.Sharpness (934ms)
 ✔ [1015/1021] Built Taxicab.Median (1.1s)
-✔ [1016/1021] Built Taxicab.Radial (1.8s)
-✔ [1017/1021] Built Taxicab.Main (667ms)
-✔ [1018/1021] Built Taxicab (583ms)
-ℹ [1020/1021] Built Verification (584ms)
+✔ [1016/1021] Built Taxicab.Radial (1.9s)
+✔ [1017/1021] Built Taxicab.Main (681ms)
+✔ [1018/1021] Built Taxicab (507ms)
+ℹ [1020/1021] Built Verification (527ms)
 info: Verification.lean:32:0: Taxicab.taxicab_erdos_mordell_strict : ∀ (A B C : Taxicab.Point) (α β γ : ℝ),
   (B.1 - A.1) * (C.2 - A.2) - (B.2 - A.2) * (C.1 - A.1) ≠ 0 →
     0 < α →
@@ -206,7 +206,7 @@ PASS: no sorryAx or project-specific axiom in any audited theorem.
 EXIT_CODE=0
 
 $ date -u +%Y-%m-%dT%H:%M:%SZ
-2026-10-16T05:50:02Z
+2026-10-16T14:27:30Z
 EXIT_CODE=0
 
 MAIN_INEQUALITY=PASS
@@ -216,7 +216,7 @@ SHARPNESS=PASS
 SHARPNESS_DISTANCES=PASS
 AXIOM_AUDIT=PASS
 
-$ python3 scripts/audit.py record 0 2026-10-16T05:49:54Z 2026-10-16T05:50:02Z
+$ python3 scripts/audit.py record 0 2026-10-16T14:27:19Z 2026-10-16T14:27:30Z
 Wrote .build/verification.json
 EXIT_CODE=0
 

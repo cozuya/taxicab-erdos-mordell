@@ -31,7 +31,6 @@ An access limitation remains: the full text of M. Ghandehari and H. Martini,
 Mathematicarum Hungarica **55** (2018), 174–189,
 DOI [10.1556/012.2018.55.2.1392](https://doi.org/10.1556/012.2018.55.2.1392),
 was not accessed in that review. Its full scope has therefore not been checked.
-No claim about resolving a differently scoped survey conjecture is made.
 
 The Lean checks establish the mathematical statements in this repository.
 Historical priority remains a separate scholarly question.
