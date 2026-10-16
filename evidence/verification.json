@@ -1,0 +1,93 @@
+{
+  "verification_exit_code": 0,
+  "status": "PASS",
+  "started_utc": "2026-10-16T05:49:54Z",
+  "finished_utc": "2026-10-16T05:50:02Z",
+  "repository_commit_at_run": null,
+  "tracked_worktree_dirty": null,
+  "github_run_url": null,
+  "github_event": null,
+  "repository_visibility": "local",
+  "identity_note": "Precommit verification is identified by source hashes; timestamps do not establish priority.",
+  "toolchain": {
+    "lean_version": "4.35.0",
+    "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+    "lake_version": "5.0.0-src+eb6cafb",
+    "mathlib_tag": "v4.35.0",
+    "mathlib_commit": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "linux_x86_64": {
+      "url": "https://github.com/leanprover/lean4/releases/download/v4.35.0/lean-4.35.0-linux.tar.zst",
+      "sha256": "7289597a44543246c9227b8cae501767e095ce17f6d448b95fc4a8dc97268f6d",
+      "directory": "lean-4.35.0-linux"
+    }
+  },
+  "source_sha256": {
+    ".github/workflows/verify.yml": "223b4f5a9c86ea28e5a77c93b04ccd2f15973db77994241bc3b69d2e5a290ab7",
+    ".gitignore": "f7e8dceca56d968438711df14725064785f189679423f57c7eb0158b8441b65d",
+    "CITATION.cff": "cfe20fe45055b4c02da7240b46251da4e3de96f22433b4a2baf544a70034b2a7",
+    "PRIOR_ART.md": "2ec3b2ad044fe86b373db885f6e52f6739c1646dda5363d1520ca8e25053f44f",
+    "PROOF.md": "12f8432a146dc10252995626ba307a7980306908e4ac2b8cb7956e57245504aa",
+    "PROVENANCE.md": "9c01bb139d566ca33e7b14302ce1d50939fdc2735376ecd0a3b76ffc0466ab34",
+    "README.md": "1e9555a497314405a8e7c8b46c8911a9ee116e8025be4b3dde4f9ff3b840f4d7",
+    "TOOLCHAIN.json": "80aedd22ec1bfb1bed1deffe4432e1a3a0e8ee78e34ab94ddc4806b1db6a0c42",
+    "Taxicab.lean": "1da7e50cd7fdb1becc2fcca487a2868e5132e57894074969b70d59be9ca7ac16",
+    "Taxicab/Algebra.lean": "61924125c88be434aa4be6af684fa451510a86ffd6390f09146ad877ca174db5",
+    "Taxicab/Basic.lean": "514e20f45a0243ec88696d4f65ab87d653567fb2b5f328dba06cc0fe08df19f3",
+    "Taxicab/Imports.lean": "c8cfe460bfc0d59b90b90c2085f65b3ebb0718b1be14f084e8496ce10e1947dd",
+    "Taxicab/Main.lean": "33dee4f3285881c66bbd37fc6e693ade938711f08edb265f8ef1e7febbb64ce3",
+    "Taxicab/Median.lean": "aa3fe3aa842b706233391a2771184ca6f49ae96997d03160436102ca4a969c9a",
+    "Taxicab/Radial.lean": "ecebec61c54eb39f1e495c953325e8ae6011f0cbe53e05b7016f6a496e6a513d",
+    "Taxicab/Sharpness.lean": "49c7586ed674cc607425361b2e299e6224e1d94744c557ff0370a4f6c3efd837",
+    "VERIFICATION_REPORT.md": "65d5c92a977aee1130839207cb449b8f9bd38d2928ee62183732d66542bac03f",
+    "Verification.lean": "dfbb3188f67f9b14f16d79dfa20051d250e9fb38d7f6b8765bccd1e70724b4ec",
+    "lake-manifest.json": "bfcc6d4f99ddf964e701dc03f7cc4cb6ca09677cee04bcbc2eac42e5a7f613dd",
+    "lakefile.toml": "2807636121b2ec317f095e5787f92c57207bd5d5c5734ba1622feb5ef74402ac",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "scripts/audit.py": "0c9ba6612a00e61c03082be93092e6577c1d6182429d241047989d95ab81a3e0",
+    "scripts/check-package.py": "5a375d353657a3816440d9ee850e924184cb10ec833f416108f30f40dfb96eba",
+    "scripts/fetch-deps.sh": "80a4d8567c8e4895f67a67fd672b7cc486a38bed2cfa85206dfca3fdfd10fd33",
+    "scripts/install-lean.sh": "bc78ec96519fe76fae06dbf842fd19b54120f351f3dccf7551e9897588951182",
+    "verify.sh": "ba742d9e08fe1af911ac060e7d929517f8d209dcc8922ff30ce56eb556223a87"
+  },
+  "audited_theorems": [
+    "Taxicab.sharpness",
+    "Taxicab.sharpness_distances",
+    "Taxicab.taxicab_erdos_mordell_strict",
+    "TaxicabVerification.exact_denominators_positive",
+    "TaxicabVerification.exact_statement"
+  ],
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_dependencies": {
+    "Taxicab.taxicab_erdos_mordell_strict": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TaxicabVerification.exact_statement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Taxicab.sharpness": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Taxicab.sharpness_distances": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "TaxicabVerification.exact_denominators_positive": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "transcript": "verification.log",
+  "theorem_types_and_axioms": "kernel-check.log"
+}

@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "Please cite this proof using the metadata below and identify the commit consulted."
+title: "Taxicab Erdős–Mordell Inequality: Proof of Conjecture 1"
+type: software
+authors:
+  - family-names: Ozols
+    given-names: Chris
+    website: "https://github.com/cozuya"
+url: "https://github.com/cozuya/taxicab-erdos-mordell"
+repository-code: "https://github.com/cozuya/taxicab-erdos-mordell"
+abstract: >-
+  A proof of Conjecture 1 of Maja Petrović, Branko Malešević, and Bojan Banjac:
+  the taxicab Erdős–Mordell inequality for all nondegenerate triangle
+  orientations and strictly interior points, with sharp coefficient 3/2.
+  By Chris Ozols, with AI-assisted proof development and formalization.
+  Verified with Lean 4.35.0 and Mathlib v4.35.0. No claim of established
+  worldwide priority.
+keywords:
+  - taxicab geometry
+  - Erdős–Mordell inequality
+  - Lean
+  - Mathlib
+  - formal proof
+preferred-citation:
+  type: report
+  title: "Taxicab Erdős–Mordell Inequality: Proof of Conjecture 1"
+  authors:
+    - family-names: Ozols
+      given-names: Chris
+  url: "https://github.com/cozuya/taxicab-erdos-mordell"

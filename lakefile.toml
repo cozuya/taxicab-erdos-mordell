@@ -1,0 +1,14 @@
+name = "taxicab_erdos_mordell"
+version = "1.0.0"
+defaultTargets = ["Taxicab", "Verification"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "Taxicab"
+
+[[lean_lib]]
+name = "Verification"

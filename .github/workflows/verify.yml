@@ -1,0 +1,58 @@
+name: Verify taxicab proof
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  public:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Exact statement, sharpness, and axioms
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      REPOSITORY_VISIBILITY: ${{ github.event.repository.visibility || 'unknown' }}
+    steps:
+      - name: Check out the source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Install archive support
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes zstd
+
+      - name: Install the pinned Lean release
+        run: |
+          bash scripts/install-lean.sh "$RUNNER_TEMP/taxicab-lean"
+          printf '%s\n' "$RUNNER_TEMP/taxicab-lean/lean-4.35.0-linux/bin" >> "$GITHUB_PATH"
+
+      - name: Fetch the locked mathlib dependencies
+        run: bash scripts/fetch-deps.sh
+
+      - name: Check package links and source manifest
+        run: |
+          python3 scripts/check-package.py
+          sha256sum --check SOURCE_SHA256SUMS
+
+      - name: Rebuild and verify the exact statements
+        run: ./verify.sh
+
+      - name: Preserve verification evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: verification-${{ github.sha }}-${{ github.run_id }}
+          path: |
+            .build/verification.log
+            .build/kernel-check.log
+            .build/verification.json
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 90

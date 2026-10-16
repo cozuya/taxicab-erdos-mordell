@@ -1,0 +1,42 @@
+Taxicab.taxicab_erdos_mordell_strict : ∀ (A B C : Taxicab.Point) (α β γ : ℝ),
+  (B.1 - A.1) * (C.2 - A.2) - (B.2 - A.2) * (C.1 - A.1) ≠ 0 →
+    0 < α →
+      0 < β →
+        0 < γ →
+          α + β + γ = 1 →
+            have P := (α * A.1 + β * B.1 + γ * C.1, α * A.2 + β * B.2 + γ * C.2);
+            2 * (Taxicab.d P A + Taxicab.d P B + Taxicab.d P C) ≥
+              3 * (Taxicab.h P B C + Taxicab.h P C A + Taxicab.h P A B)
+'Taxicab.taxicab_erdos_mordell_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+TaxicabVerification.exact_statement : ∀ (A B C : ℝ × ℝ) (α β γ : ℝ),
+  (B.1 - A.1) * (C.2 - A.2) - (B.2 - A.2) * (C.1 - A.1) ≠ 0 →
+    0 < α →
+      0 < β →
+        0 < γ →
+          α + β + γ = 1 →
+            have P := (α * A.1 + β * B.1 + γ * C.1, α * A.2 + β * B.2 + γ * C.2);
+            2 * (|P.1 - A.1| + |P.2 - A.2| + (|P.1 - B.1| + |P.2 - B.2|) + (|P.1 - C.1| + |P.2 - C.2|)) ≥
+              3 *
+                (|(C.1 - B.1) * (P.2 - B.2) - (C.2 - B.2) * (P.1 - B.1)| / max |C.1 - B.1| |C.2 - B.2| +
+                    |(A.1 - C.1) * (P.2 - C.2) - (A.2 - C.2) * (P.1 - C.1)| / max |A.1 - C.1| |A.2 - C.2| +
+                  |(B.1 - A.1) * (P.2 - A.2) - (B.2 - A.2) * (P.1 - A.1)| / max |B.1 - A.1| |B.2 - A.2|)
+'TaxicabVerification.exact_statement' depends on axioms: [propext, Classical.choice, Quot.sound]
+Taxicab.sharpness : ∀ (k : ℝ),
+  3 / 2 < k →
+    ∃ A B C P α β γ,
+      Taxicab.det A B C ≠ 0 ∧
+        0 < α ∧
+          0 < β ∧
+            0 < γ ∧
+              α + β + γ = 1 ∧
+                P = Taxicab.bary A B C α β γ ∧
+                  0 < Taxicab.sideDen B C ∧
+                    0 < Taxicab.sideDen C A ∧ 0 < Taxicab.sideDen A B ∧ Taxicab.S P A B C < k * Taxicab.T P A B C
+'Taxicab.sharpness' depends on axioms: [propext, Classical.choice, Quot.sound]
+Taxicab.sharpness_distances : ∀ (ε : ℝ),
+  0 < ε → ε < 1 → Taxicab.S (0, ε) (-1, 0) (1, 0) (0, 1) = 3 + ε ∧ Taxicab.T (0, ε) (-1, 0) (1, 0) (0, 1) = 2 - ε
+'Taxicab.sharpness_distances' depends on axioms: [propext, Classical.choice, Quot.sound]
+TaxicabVerification.exact_denominators_positive : ∀ (A B C : ℝ × ℝ),
+  (B.1 - A.1) * (C.2 - A.2) - (B.2 - A.2) * (C.1 - A.1) ≠ 0 →
+    0 < max |C.1 - B.1| |C.2 - B.2| ∧ 0 < max |A.1 - C.1| |A.2 - C.2| ∧ 0 < max |B.1 - A.1| |B.2 - A.2|
+'TaxicabVerification.exact_denominators_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
