@@ -19,8 +19,8 @@ taxicab plane and any strictly interior point P, the sum of the
 taxicab distances from P to the vertices is at least 3/2 times
 the sum of the taxicab distances from P to the supporting lines
 of the opposite sides. This holds without an orientation restriction,
-and 3/2 is sharp. See [README.md](README.md#exact-statement)
-for the exact barycentric and coordinate statement, including the
+and 3/2 is sharp. The "Exact statement" section of [README.md](README.md)
+gives the exact barycentric and coordinate statement, including the
 definition of distance to the infinite supporting lines.
 
 **Original source:** [Petrović–Malešević–Banjac, Conjecture 1, printed
@@ -40,3 +40,5 @@ Petrovic Malesevic Banjac; Erdős–Mordell taxicab geometry conjecture
 arbitrary orientations; coefficient 3/2 proof; Lean proof.
 
 Repository: https://github.com/cozuya/taxicab-erdos-mordell
+
+Overview page: https://cozuya.github.io/proofs/taxicab-erdos-mordell/

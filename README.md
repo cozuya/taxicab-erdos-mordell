@@ -23,7 +23,8 @@ The conjecture appears on printed page 1318 / PDF page 20 of
 [Exact-statement check](Verification.lean) ·
 [Verification runs](https://github.com/cozuya/taxicab-erdos-mordell/actions/workflows/verify.yml) ·
 [Verification report](VERIFICATION_REPORT.md) · [Provenance](PROVENANCE.md) ·
-[Discovery summary](DISCOVERY.md) · [Prior art](PRIOR_ART.md) · [Citation](CITATION.cff)
+[Discovery summary](DISCOVERY.md) · [Prior art](PRIOR_ART.md) · [Citation](CITATION.cff) ·
+[Overview page](https://cozuya.github.io/proofs/taxicab-erdos-mordell/)
 
 ## Exact statement
 
