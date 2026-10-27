@@ -15,13 +15,20 @@ abstract: >-
   orientations and strictly interior points, with sharp coefficient 3/2.
   By Chris Ozols, with AI-assisted proof development and formalization.
   Verified with Lean 4.35.0 and Mathlib v4.35.0. No claim of established
-  worldwide priority.
+  worldwide priority, novelty, first discovery, or official status of any
+  outside conjecture listing. A bounded prior-art search found no earlier
+  proof in the sources examined.
 keywords:
   - taxicab geometry
   - Erdős–Mordell inequality
   - Lean
   - Mathlib
   - formal proof
+  - taxicab Erdos-Mordell Conjecture 1
+  - Petrovic Malesevic Banjac Conjecture 1
+  - arbitrary triangle orientations
+  - sharp constant 3/2
+  - Lean 4 formal verification
 preferred-citation:
   type: report
   title: "Taxicab Erdős–Mordell Inequality: Proof of Conjecture 1"
