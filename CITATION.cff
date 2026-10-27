@@ -14,10 +14,10 @@ abstract: >-
   the taxicab Erdős–Mordell inequality for all nondegenerate triangle
   orientations and strictly interior points, with sharp coefficient 3/2.
   By Chris Ozols, with AI-assisted proof development and formalization.
-  Verified with Lean 4.35.0 and Mathlib v4.35.0. No claim of established
-  worldwide priority, novelty, first discovery, or official status of any
-  outside conjecture listing. A bounded prior-art search found no earlier
-  proof in the sources examined.
+  Verified with Lean 4.35.0 and Mathlib v4.35.0. A bounded prior-art
+  search found no earlier proof in the sources examined. This makes no
+  claim of novelty, first discovery, historical priority, or official
+  closure of any outside conjecture listing.
 keywords:
   - taxicab geometry
   - Erdős–Mordell inequality
