@@ -7,10 +7,13 @@ including arbitrary triangle orientations and the sharp coefficient 3/2.
 The precise inequality and its sharpness are formally checked in Lean
 4.35.0 with Mathlib v4.35.0.
 
-**Historical status:** A bounded, AI-assisted literature search located
-no earlier resolution of the exact arbitrary-orientation conjecture in
-the sources examined. **No novelty, first-discovery, historical-priority,
-or official problem-list closure claim is made.** This page exists so
+**Historical status:** An earlier proof appears to exist: a
+[Principia Math in Progress write-up](https://github.com/PrincipiaMathOrg/math-solutions/blob/main/site-backup/mathdb-341671/mathdb-341671-solution.tex) for MathDB 341671, dated
+12 September 2026, presents a proof of Conjecture 1 in a stronger form,
+with a [Lean formalization](https://github.com/PrincipiaMathOrg/math-solutions/blob/main/mathdb/Principia/MathDB/Problem341671.lean) published on 26 October 2026. The
+bounded, AI-assisted literature search for this repository missed it; it
+was found on 27 October 2026. **No novelty, first-discovery,
+historical-priority, or official problem-list closure claim is made.** This page exists so
 that other people considering work on the conjecture can find and
 evaluate the proof.
 
