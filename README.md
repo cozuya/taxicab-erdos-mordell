@@ -2,6 +2,13 @@
 
 **By Chris Ozols, with AI-assisted proof development and formalization.**
 
+> **Proof available; no novelty claim.** A bounded search found no earlier
+> proof of the full arbitrary-orientation taxicab Erdős–Mordell Conjecture 1
+> in the sources reviewed. I do not claim this is a first or novel proof,
+> or that an external problem listing has been officially closed.
+> This repository provides a checkable proof and Lean verification for
+> anyone investigating the same statement. See [prior art](PRIOR_ART.md).
+
 This repository proves **Conjecture 1 of Maja Petrović, Branko Malešević, and
 Bojan Banjac**: the taxicab Erdős–Mordell inequality holds for every nondegenerate
 triangle, in every orientation, and every strictly interior point. The coefficient
@@ -16,7 +23,7 @@ The conjecture appears on printed page 1318 / PDF page 20 of
 [Exact-statement check](Verification.lean) ·
 [Verification runs](https://github.com/cozuya/taxicab-erdos-mordell/actions/workflows/verify.yml) ·
 [Verification report](VERIFICATION_REPORT.md) · [Provenance](PROVENANCE.md) ·
-[Prior art](PRIOR_ART.md) · [Citation](CITATION.cff)
+[Discovery summary](DISCOVERY.md) · [Prior art](PRIOR_ART.md) · [Citation](CITATION.cff)
 
 ## Exact statement
 
