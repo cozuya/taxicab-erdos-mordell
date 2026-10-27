@@ -2,10 +2,13 @@
 
 **By Chris Ozols, with AI-assisted proof development and formalization.**
 
-> **Proof available; no novelty claim.** A bounded search found no earlier
-> proof of the full arbitrary-orientation taxicab Erdős–Mordell Conjecture 1
-> in the sources reviewed. I do not claim this is a first or novel proof,
-> or that an external problem listing has been officially closed.
+> **Proof available; no novelty claim; an earlier proof appears to exist.**
+> A [Principia Math in Progress write-up](https://github.com/PrincipiaMathOrg/math-solutions/blob/main/site-backup/mathdb-341671/mathdb-341671-solution.tex) for MathDB 341671, dated
+> 12 September 2026, presents a proof of Conjecture 1 in a stronger form
+> (every real normed plane), and a [Lean formalization](https://github.com/PrincipiaMathOrg/math-solutions/blob/main/mathdb/Principia/MathDB/Problem341671.lean) of it was
+> published on 26 October 2026. The bounded search for this repository missed
+> it; it was found on 27 October 2026. I do not claim this is a first or novel
+> proof, or that an external problem listing has been officially closed.
 > This repository provides a checkable proof and Lean verification for
 > anyone investigating the same statement. See [prior art](PRIOR_ART.md).
 

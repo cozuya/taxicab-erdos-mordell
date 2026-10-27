@@ -32,5 +32,24 @@ Mathematicarum Hungarica **55** (2018), 174–189,
 DOI [10.1556/012.2018.55.2.1392](https://doi.org/10.1556/012.2018.55.2.1392),
 was not accessed in that review. Its full scope has therefore not been checked.
 
+## Earlier proof found after the review (October 27, 2026)
+
+A later search-engine and GitHub check found an earlier proof that the review
+missed. Principia Math in Progress, *The sharp taxicab Erdős–Mordell
+inequality*, MathDB 341671, is a write-up dated 12 September 2026 by its authors
+and originally hosted on principia-math.com
+([LaTeX source](https://github.com/PrincipiaMathOrg/math-solutions/blob/main/site-backup/mathdb-341671/mathdb-341671-solution.tex)). It presents a proof that, for a strictly interior point of
+any nondegenerate triangle in every real normed plane, the sum of distances to the
+vertices is at least 3/2 times the sum of distances to the side lines, and also
+to the side segments. It states that 3/2 is optimal in the taxicab plane. A Lean
+formalization of the inequality, not of the sharpness example, was committed to
+PrincipiaMathOrg/math-solutions on 26 October 2026
+([Problem341671.lean](https://github.com/PrincipiaMathOrg/math-solutions/blob/main/mathdb/Principia/MathDB/Problem341671.lean)).
+
+The write-up date is author-entered and has not been independently confirmed.
+Neither document has been reviewed here. On that record, Conjecture 1 had a
+proof before this repository's work; this package is a separate proof with its
+own Lean verification.
+
 The Lean checks establish the mathematical statements in this repository.
 Historical priority remains a separate scholarly question.
